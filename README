@@ -2,3 +2,18 @@ cobaltsite
 ----------
 
 Example of things that break `cobalt.rs`
+
+Current breakage
+----------------
+
+```
+cd ..
+$ cobalt build -s cobaltsite/ -d output/
+building from cobaltsite/ into output/
+thread '<unnamed>' panicked at 'called `Option::unwrap()` on a `None` value',
+../src/libcore/option.rs:365
+thread '<main>' panicked at 'called `Result::unwrap()` on an `Err` value:
+Any', ../src/libcore/result.rs:736
+Created output/_posts/02.html
+Created output/_posts/01.html
+```
